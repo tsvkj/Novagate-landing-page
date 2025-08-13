@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src={Novage_logo} alt="logo" height={60} width={60} />
+            <img src={Novage_logo} alt="logo" className="h-10 w-10 lg:h-12 lg:w-12" />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground">
                 NovaGate
@@ -67,9 +67,9 @@ const Header = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-10 w-10" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-10 w-10" />
               )}
             </Button>
           </div>

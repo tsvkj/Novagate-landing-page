@@ -20,7 +20,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-        <div className="px-36">
+        <div className="lg:px-36">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Global Trade &
             <span className="block text-white/90">Financial Solutions</span>

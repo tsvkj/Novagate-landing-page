@@ -34,7 +34,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <img src={Novage_logo} alt="logo" height={60} width={60} />
+              <img
+                src={Novage_logo}
+                alt="logo"
+                className="h-10 w-10 lg:h-12 lg:w-12"
+              />
               <div className="flex flex-col">
                 <span className="text-lg font-bold">Novagate</span>
                 <span className="text-xs text-background/70 -mt-1">
