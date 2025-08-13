@@ -6,13 +6,13 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/20"></div>
@@ -22,12 +22,13 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Global Trade & 
+            Global Trade &
             <span className="block text-white/90">Financial Solutions</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-            Novagate General Trading FZ LLC bridges opportunity and trust in international trade and finance, serving clients worldwide. 
+            Novagate General Trading FZ LLC bridges opportunity and trust in
+            international trade and finance, serving clients worldwide.
           </p>
 
           {/* Key Features */}
@@ -48,18 +49,30 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              variant="hero" 
-              size="lg" 
+            <Button
+              variant="hero"
+              size="lg"
               className="text-lg px-8 py-4 group"
+              onClick={() => {
+                const contactSection = document.getElementById("services");
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
               Explore Services
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               className="text-lg px-8 py-4 bg-white/10 text-white border-white/30 hover:bg-white hover:text-primary"
+              onClick={() => {
+                const contactSection = document.getElementById("contact");
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
               Contact Us
             </Button>

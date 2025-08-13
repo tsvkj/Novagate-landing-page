@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Globe2 } from "lucide-react";
+import Novage_logo from "@/assets/Novagate_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,10 +19,14 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Globe2 className="h-8 w-8 text-primary" />
+            <img src={Novage_logo} alt="logo" height={60} width={60} />
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-foreground">NovaGate</span>
-              <span className="text-xs text-muted-foreground -mt-1">General Trading FZ LLC</span>
+              <span className="text-lg font-bold text-foreground">
+                NovaGate
+              </span>
+              <span className="text-xs text-muted-foreground -mt-1">
+                General Trading FZ LLC
+              </span>
             </div>
           </div>
 
@@ -40,7 +45,16 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="corporate" className="px-6">
+            <Button
+              variant="corporate"
+              className="px-6"
+              onClick={() => {
+                const contactSection = document.getElementById("contact");
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Get Quote
             </Button>
           </div>
@@ -52,7 +66,11 @@ const Header = () => {
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>

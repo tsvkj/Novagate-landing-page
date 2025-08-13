@@ -97,17 +97,12 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "info@novagate-trading.com",
+      details: "info@novagateuae.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+971 XX XXX XXXX",
-    },
-    {
-      icon: Clock,
-      title: "Business Hours",
-      details: "Sun - Thu: 9:00 AM - 6:00 PM",
+      details: "+971 50 394 0393",
     },
   ];
 

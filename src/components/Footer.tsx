@@ -1,4 +1,5 @@
-import { Globe2, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Novage_logo from "@/assets/Novagate_logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,7 +8,7 @@ const Footer = () => {
     { name: "Home", href: "#home" },
     { name: "Services", href: "#services" },
     { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
   ];
 
   const services = [
@@ -16,14 +17,14 @@ const Footer = () => {
     "Oil & Gas Commodities",
     "Vehicle Trade",
     "Banking Instruments",
-    "Crypto Exchange"
+    "Crypto Exchange",
   ];
 
   const legal = [
     "Privacy Policy",
-    "Terms of Service", 
+    "Terms of Service",
     "Cookie Policy",
-    "Compliance"
+    "Compliance",
   ];
 
   return (
@@ -33,15 +34,18 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <Globe2 className="h-8 w-8 text-primary" />
+              <img src={Novage_logo} alt="logo" height={60} width={60} />
               <div className="flex flex-col">
                 <span className="text-lg font-bold">Novagate</span>
-                <span className="text-xs text-background/70 -mt-1">General Trading FZ LLC</span>
+                <span className="text-xs text-background/70 -mt-1">
+                  General Trading FZ LLC
+                </span>
               </div>
             </div>
-            
+
             <p className="text-background/80 mb-6 leading-relaxed">
-              Your trusted global trading partner, bridging opportunity and trust in international trade and finance from Ras Al Khaimah, UAE.
+              Your trusted global trading partner, bridging opportunity and
+              trust in international trade and finance from Ras Al Khaimah, UAE.
             </p>
 
             <div className="space-y-3">
@@ -51,11 +55,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm">info@novagate-trading.com</span>
+                <span className="text-sm">info@novagateuae.com</span>
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-sm">+971 XX XXX XXXX</span>
+                <span className="text-sm">+971 50 394 0393</span>
               </div>
             </div>
           </div>
@@ -66,7 +70,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
+                  <a
                     href={link.href}
                     className="text-background/80 hover:text-primary transition-colors duration-300"
                   >
@@ -110,11 +114,11 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-background/70 text-sm">
-              © {currentYear} Novagate General Trading FZ LLC. All rights reserved.
+              © {currentYear} Novagate General Trading FZ LLC. All rights
+              reserved.
             </p>
-            
+
             <div className="flex items-center space-x-6 text-sm text-background/70">
-              <span>UAE Business License: XXXXXXX</span>
               <span>•</span>
               <span>Regulated by RAKEZ</span>
             </div>
