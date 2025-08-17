@@ -43,7 +43,7 @@ const About = () => {
             Your Trusted Global Trading Partner
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Headquartered in Ras Al Khaimah, UAE, Novagate General Trading FZ
+            Headquartered in Dubai-UAE, Novagate General Trading FZ
             LLC offers a wide range of services — from import/export and
             financial instruments to digital asset solutions — serving clients
             around the world.
@@ -58,7 +58,7 @@ const About = () => {
                 <MapPin className="h-6 w-6 text-primary mr-3" />
                 <div>
                   <h3 className="text-xl font-semibold text-foreground">
-                    Headquartered in Ras Al Khaimah, UAE
+                    Headquartered in Dubai-UAE
                   </h3>
                   <p className="text-muted-foreground">
                     Serving international trade and finance clients globally
@@ -66,7 +66,7 @@ const About = () => {
                 </div>
               </div>
               <p className="text-lg text-foreground leading-relaxed">
-                Novagate General Trading FZ LLC is a Ras Al Khaimah-based global
+                Novagate General Trading FZ LLC is a Duabi global
                 trading and financial facilitation company. We specialize in
                 diverse industries, offering import/export solutions, banking
                 instruments, and digital asset services to clients worldwide.

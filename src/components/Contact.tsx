@@ -92,7 +92,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      details: "Ras Al Khaimah, UAE",
+      details: "Dubai, UAE",
     },
     {
       icon: Mail,

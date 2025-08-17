@@ -49,13 +49,13 @@ const Footer = () => {
 
             <p className="text-background/80 mb-6 leading-relaxed">
               Your trusted global trading partner, bridging opportunity and
-              trust in international trade and finance from Ras Al Khaimah, UAE.
+              trust in international trade and finance from Dubai, UAE.
             </p>
 
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-background/80">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-sm">Ras Al Khaimah, UAE</span>
+                <span className="text-sm">Dubai, UAE</span>
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <Mail className="h-4 w-4 text-primary" />
